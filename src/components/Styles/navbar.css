@@ -1,0 +1,80 @@
+/* Navigation Bar */
+nav {
+  height: 60px;
+  background-color: #F9C9A1;
+  padding: 15px;
+}
+
+/* Navigation Container */
+.nav_box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo/Shop Name Styling */
+.my_shop {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5C0C34;
+  font-family: cursive;
+  cursor: pointer;
+}
+
+/* Cart Icon */
+.cart {
+  cursor: pointer;
+}
+
+/* Cart Icon Size and Color */
+.cart span:nth-child(1) {
+  font-size: 2rem;
+  color: #5C0C34;
+}
+
+/* Cart Quantity Badge */
+.cart span:nth-child(2) {
+  padding: 0 3px;
+  background-color: #5C0C34;
+  color: #F9C9A1;
+  font-weight: bold;
+  border-radius: 5px;
+  position: relative;
+  top: -15px;
+}
+
+/* Responsive Styles */
+
+/* Smaller screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  .nav_box {
+    width: 90%;
+    padding: 0 10px;
+  }
+  .my_shop {
+    font-size: 1.2rem; /* Reduces font size for the shop name */
+  }
+  .cart span:nth-child(1) {
+    font-size: 1.5rem; /* Reduces font size for the cart icon */
+  }
+}
+
+/* Very small screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .nav_box {
+    flex-direction: column; /* Stacks items vertically */
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .my_shop {
+    font-size: 1rem; /* Further reduces font size for the shop name */
+  }
+  .cart span:nth-child(1) {
+    font-size: 1.2rem; /* Further reduces font size for the cart icon */
+  }
+  .cart span:nth-child(2) {
+    top: -10px; /* Adjusts positioning for smaller screens */
+  }
+}

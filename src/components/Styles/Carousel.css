@@ -1,0 +1,69 @@
+/* Carousel Container */
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  background-color: #8f6e6e;
+}
+
+/* Carousel Item */
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Logo Image */
+.logo-img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Dot Color */
+.slick-dots li button:before {
+  color: #5C0C34; /* Dot color */
+}
+
+/* Arrow Color */
+.slick-prev:before, .slick-next:before {
+  color: #5C0C34; /* Arrow color */
+}
+
+/* Responsive Styles */
+
+/* Tablets and Smaller Screens (768px and below) */
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    width: 90%; /* Increase width to utilize more screen space */
+    padding: 30px 0;
+  }
+
+  .logo-img {
+    width: 80px;
+  }
+}
+
+/* Mobile Devices (576px and below) */
+@media screen and (max-width: 576px) {
+  .carousel-container {
+    padding: 20px 0;
+  }
+
+  .logo-img {
+    width: 60px; /* Further reduce logo size */
+  }
+  
+  .carousel-item {
+    padding: 5px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 0.8rem; /* Reduce dot size */
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 1.2rem; /* Adjust arrow size */
+  }
+}

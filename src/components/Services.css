@@ -1,0 +1,116 @@
+/* Subtitle Styling */
+.services-intro {
+  font-size: 2rem; /* Adjusted to use rem for scalability */
+  color: #3a3a3a;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Services Container */
+.services-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* Service Item Styles */
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  width: 22%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+/* Hover Effect */
+.service-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Styling */
+.service-icon {
+  font-size: large;
+  color: #b67d58;
+  margin-bottom: 15px;
+}
+
+/* Title in Each Card */
+.service-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Description Styling */
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+
+/* For tablets (768px and up) */
+@media (max-width: 992px) {
+  .service-item {
+    width: 45%; /* Make items take half the width */
+    padding: 20px;
+  }
+
+  .services-intro {
+    font-size: 1.8rem; /* Slightly smaller font */
+  }
+}
+
+/* For mobile devices (576px and up) */
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px;
+  }
+
+  .services-intro {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* For very small mobile devices (less than 576px) */
+@media (max-width: 576px) {
+  .services-intro {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+}

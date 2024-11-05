@@ -1,0 +1,122 @@
+/* Testimonials Section */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Testimonial Slide */
+.testimonial-slide {
+  font-size: 18px;
+  color: #555;
+}
+
+.testimonial-slide h2 {
+  font-size: 24px;
+  color: #A46464;
+  margin-bottom: 20px;
+}
+
+.testimonial-slide p {
+  font-size: 18px;
+  color: #5C0C34;
+  margin-bottom: 10px;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.navigation-buttons button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #A46464;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navigation-buttons button:hover {
+  color: #5C0C34;
+}
+
+/* Dots Navigation */
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding: 40px;
+    max-width: 90%; /* Allows more width for medium screens */
+  }
+
+  .testimonial-slide {
+    font-size: 16px; /* Reduces font size */
+  }
+
+  .testimonial-slide h2 {
+    font-size: 22px; /* Reduces heading size */
+  }
+
+  .navigation-buttons button {
+    font-size: 28px; /* Slightly smaller navigation buttons */
+  }
+}
+
+/* Small Screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .testimonials {
+    padding: 30px;
+    max-width: 95%; /* Maximizes width for small screens */
+  }
+
+  .testimonial-slide {
+    font-size: 15px; /* Further reduces font size */
+  }
+
+  .testimonial-slide h2 {
+    font-size: 20px; /* Further reduces heading size */
+  }
+
+  .navigation-buttons button {
+    font-size: 25px; /* Adjusts button size for smaller screens */
+  }
+
+  .dot {
+    height: 12px; /* Reduces dot size */
+    width: 12px;
+  }
+}

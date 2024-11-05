@@ -1,0 +1,126 @@
+/* Services Section Container */
+.services-section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+/* Image Container */
+.image-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text Content */
+.text-content {
+  flex: 2;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Tabs for Section */
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Tab Buttons */
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+  border-bottom: 0 solid transparent;
+}
+
+/* Active Tab Styling */
+.tabs .active {
+  border-bottom: 0.5px solid #000;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Text Content Area */
+.content {
+  font-size: 16px;
+  color: #555;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* View More Button */
+.view-more-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background-color: transparent;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-more-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Paragraph Text Alignment */
+.text-content p {
+  text-align: justify;
+}
+
+/* Responsive Styles */
+
+/* Smaller screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stacks content vertically */
+  }
+  h2 {
+    font-size: 20px; /* Adjusts title font size */
+  }
+  .tabs button {
+    font-size: 14px; /* Reduces font size for tabs */
+    padding: 8px 16px; /* Reduces padding for tabs */
+  }
+  .view-more-button {
+    font-size: 12px; /* Reduces button font size */
+    padding: 8px 16px; /* Adjusts button padding */
+  }
+}
+
+/* Very small screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 18px; /* Further reduces title font size */
+  }
+  .view-more-button {
+    width: 100%; /* Expands button to full width */
+    padding: 10px; /* Adjusts button padding */
+  }
+}

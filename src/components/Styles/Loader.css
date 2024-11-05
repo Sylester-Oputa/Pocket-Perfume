@@ -1,0 +1,46 @@
+/* Loader Container */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /* Background color to cover the entire screen */
+  z-index: 9999; /* Ensures loader stays on top of other content */
+}
+
+/* Loader Icon */
+.loader-icon {
+  width: 100px; /* Adjusts the loader icon's size */
+  height: auto;
+  animation: fadeInOut 3s infinite; /* Infinite loop for fade-in and fade-out effect */
+}
+
+/* Keyframes for fade-in and fade-out animation */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0.3; /* Starts and ends at a lower opacity */
+  }
+  50% {
+    opacity: 1; /* Fully visible in the middle of the animation */
+  }
+}
+
+/* Responsive Styles */
+
+/* Smaller screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  .loader-icon {
+    width: 80px; /* Reduces size for smaller screens */
+  }
+}
+
+/* Very small screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .loader-icon {
+    width: 60px; /* Further reduces size for extra small devices */
+  }
+}

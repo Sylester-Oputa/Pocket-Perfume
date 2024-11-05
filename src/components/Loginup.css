@@ -1,0 +1,182 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #5C0C34, #F9C9A1, #A46464, #96565C);
+  background-size: 400% 400%;
+  animation: gradientAnimation 5s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.login-box {
+  background: #ad9b9b;
+  border-radius: 10px;
+  padding: 40px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 12px;
+  color: #F9C9A1;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 5px;
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #613816;
+  text-decoration: none;
+}
+
+.login-button {
+  background: #5C0C34;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+
+.social-login {
+  margin: 20px 0;
+}
+
+.social-login p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.large-icon {
+  font-size: large;
+  color: #5C0C34;
+}
+
+.signup-link {
+  font-size: 12px;
+  color: #777;
+}
+
+.signup-link a {
+  color: #613816;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login-box {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .social-icon {
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .input-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .input-group label {
+    font-size: 10px;
+  }
+
+  .input-group input {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .forgot-password,
+  .signup-link {
+    font-size: 10px;
+  }
+
+  .login-button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .large-icon {
+    font-size: medium;
+  }
+}

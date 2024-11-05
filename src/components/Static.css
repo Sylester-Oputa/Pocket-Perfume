@@ -1,0 +1,110 @@
+/* Static Page Container */
+.static-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading Styling */
+.static-page-container h2 {
+  font-size: 2.5em;
+  color: #5C0C34;
+  margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.static-page-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Image Styling */
+.static-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.static-button {
+  background-color: #96565C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.static-button:hover {
+  background-color: #5C0C34;
+}
+
+/* Responsive Styles */
+
+/* For tablets (992px and down) */
+@media (max-width: 992px) {
+  .static-page-container h2 {
+    font-size: 2em;
+  }
+
+  .static-page-container p {
+    font-size: 1.1em;
+  }
+
+  .static-button {
+    padding: 8px 16px;
+    font-size: 0.95em;
+  }
+}
+
+/* For mobile devices (768px and down) */
+@media (max-width: 768px) {
+  .static-page-container {
+    padding: 15px;
+  }
+
+  .static-page-container h2 {
+    font-size: 1.8em;
+  }
+
+  .static-page-container p {
+    font-size: 1em;
+  }
+
+  .static-button {
+    padding: 8px 14px;
+    font-size: 0.9em;
+  }
+}
+
+/* For very small mobile devices (576px and down) */
+@media (max-width: 576px) {
+  .static-page-container h2 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+  }
+
+  .static-page-container p {
+    font-size: 0.95em;
+  }
+
+  .static-button {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+}

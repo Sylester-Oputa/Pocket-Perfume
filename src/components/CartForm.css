@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.heading_content {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #020202;
+  text-align: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Medium screens (Tablets and larger mobile devices) */
+@media screen and (max-width: 1024px) {
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .heading_content {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 20px;
+  }
+}
+
+/* Small screens (Mobile devices) */
+@media screen and (max-width: 768px) {
+  .App-logo {
+    height: 25vmin;
+  }
+
+  .heading_content {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .App-header {
+    font-size: calc(7px + 2vmin);
+  }
+}
+
+/* Extra small screens (Very small mobile devices) */
+@media screen and (max-width: 480px) {
+  .App-logo {
+    height: 20vmin;
+  }
+
+  .heading_content {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .App-header {
+    font-size: calc(6px + 2vmin);
+    padding: 10px;
+  }
+}

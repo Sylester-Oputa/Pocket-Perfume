@@ -1,0 +1,264 @@
+.hero {
+  background-image: url(./images/Perfume-bg.jpg);
+  width: 100%;
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -10px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* About Section */
+.perfume-section {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+.perfume-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.perfume-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.perfume-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.perfume-icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+.icon-box img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+}
+
+.icon-box h3 {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.perfume-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfume-image img {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ddd;
+}
+
+/* Achievements Section */
+.achievements {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+.achievement-items {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.achievement-item h3 {
+  font-size: 36px;
+  color: #3d3d3d;
+}
+
+.achievement-item p {
+  color: #666;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  color: #3d3d3d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team {
+  padding: 50px 100px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  margin: 20px;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #777;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+/* Sponsor Section */
+.sponsors {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sponsor-logos img {
+  width: 100px;
+}
+
+/* Responsive Breakpoints */
+
+/* Tablets and small screens */
+@media screen and (max-width: 990px) {
+  .hero-text h1 {
+    font-size: 36px;
+  }
+  .perfume-content h2 {
+    font-size: 1.5rem;
+  }
+  .perfume-content p {
+    font-size: 0.9rem;
+  }
+  .achievement-item h3 {
+    font-size: 28px;
+  }
+  .team {
+    padding: 30px 50px;
+  }
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Large mobile screens */
+@media screen and (max-width: 768px) {
+  .perfume-section,
+  .achievements {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .perfume-content {
+    padding-right: 0;
+  }
+  .perfume-image img {
+    width: 300px;
+    height: 300px;
+  }
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero-text h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .perfume-content h2 {
+    font-size: 1.2rem;
+  }
+  .perfume-content p,
+  .achievement-item p {
+    font-size: 0.85rem;
+    text-align: justify;
+  }
+  .icon-box img {
+    width: 50px;
+    height: 50px;
+  }
+  .perfume-image img {
+    width: 200px;
+    height: 200px;
+  }
+  .team {
+    padding: 20px;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+  .sponsor-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sponsor-logos img {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+}

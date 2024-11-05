@@ -1,0 +1,100 @@
+/* Section Container */
+section {
+  width: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Wraps cards for responsiveness */
+}
+
+/* Card Styling */
+.cards {
+  width: 250px;
+  padding: 20px;
+  border: 1px solid #A0748C;
+  border-radius: 20px;
+  margin: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  box-shadow: 0 5px 5px 5px #A0748C;
+}
+
+/* Image Box */
+.image_box img {
+  width: 250px;
+  height: 280px;
+  object-fit: cover; /* Ensures the image fills its container without distortion */
+}
+
+/* Card Details */
+.details p:nth-child(1) {
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.details p:nth-child(2) {
+  color: grey;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.details p:nth-child(3) {
+  font-weight: bold;
+  color: grey;
+}
+
+/* Button Styling */
+.details button {
+  padding: 20px;
+  width: 100%;
+  border: none;
+  background-color: #5C0C34;
+  outline: none;
+  border-radius: 30px;
+  color: #F6C8A3;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive Styles */
+
+/* Medium Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+  .cards {
+    width: 200px; /* Reduces card width */
+  }
+  .details p:nth-child(1),
+  .details p:nth-child(2) {
+    font-size: 20px; /* Adjusts font size */
+  }
+  .details button {
+    padding: 15px; /* Reduces button padding */
+    font-size: 16px; /* Adjusts font size */
+  }
+}
+
+/* Small Screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  section {
+    width: 90%; /* Expands section width */
+    margin-top: 10%; /* Adds more top margin */
+  }
+  .cards {
+    width: 100%; /* Makes each card take full width */
+    margin: 10px 0; /* Reduces margin */
+  }
+  .details p:nth-child(1),
+  .details p:nth-child(2) {
+    font-size: 18px; /* Further reduces font size */
+  }
+  .details button {
+    font-size: 15px; /* Reduces button font size */
+  }
+}
