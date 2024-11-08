@@ -51,16 +51,6 @@ const Footer = () => {
         </div>
 
       </div>
-
-      <div className="footer-bottom">
-        <nav className="footer-nav">
-         <Link to="/" className="link-nav">HOME</Link>
-         <Link to="/about" className="link-nav">ABOUT</Link>
-         <Link to="/shop" className="link-nav">SHOP</Link>
-         <Link to="/service" className="link-nav">SERVICES</Link>
-         <Link to="/contact" className="link-nav">CONTACT</Link>
-        </nav>
-      </div>
     </footer>
   );
 };
