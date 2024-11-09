@@ -1,8 +1,8 @@
-/* Footer Base Styles */
+/* Base Styles */
 .footer {
   background-color: #1a1a1a;
   color: #fff;
-  padding: 20px 20px;
+  padding: 20px;
   width: 100%;
 }
 
@@ -14,6 +14,7 @@
   margin: 0 auto;
 }
 
+/* Footer sections */
 .footer-section {
   flex-basis: 22%;
   text-align: center;
@@ -36,10 +37,7 @@
   align-items: center;
 }
 
-.contact-section h3,
-.footer-section h3,
-.news-letter h3,
-.useful-links-section h3 {
+.footer-section h3 {
   font-size: 18px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -53,14 +51,6 @@
   font-size: 15px;
 }
 
-.contact-section ul li,
-.useful-links-section ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
 .footer-social {
   display: flex;
   justify-content: center;
@@ -68,6 +58,7 @@
   margin-top: 10px;
 }
 
+/* Links and text */
 .footer-social a {
   color: white;
   text-decoration: none;
@@ -80,6 +71,7 @@
   text-align: justify;
 }
 
+/* Subscription input and button */
 .email-input {
   width: 88%;
   padding: 10px;
@@ -108,77 +100,38 @@
   color: #1a1a1a;
 }
 
-.social_link {
-  color: #e1e1e1;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.social_link:hover {
-  color: #F9C9A1;
-}
-
-.footer-bottom {
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.footer-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #1a1a1a;
-}
-
-.link-nav {
-  color: #e1e1e1;
-  text-decoration: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.link-nav:hover {
-  color: #F9C9A1;
-}
-
-/* Responsive Adjustments */
+/* Responsive Styles */
 @media screen and (max-width: 1024px) {
   .footer-container {
-    justify-content: space-around;
+    max-width: 100%;
+    padding: 0 20px;
   }
-  
+
   .footer-section {
     flex-basis: 45%;
+    margin-bottom: 20px;
   }
 
   .footer-nav {
     flex-direction: column;
     gap: 10px;
   }
-
-  .link-nav {
-    font-size: 18px;
-    padding: 5px 10px;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .footer-section {
-    flex-basis: 100%;
-    text-align: left;
+  .footer-container {
+    padding: 0 10px;
   }
 
-  .footer-nav {
-    flex-direction: column;
+  .footer-section {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 15px;
   }
 
   .email-input,
   .subscribe-btn {
-    width: 100%;
-    font-size: 16px;
+    width: 90%;
   }
 
   .footer-social a {
@@ -204,5 +157,11 @@
 
   .footer-social a {
     font-size: 16px;
+  }
+
+  .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+    text-align: center;
   }
 }
