@@ -19,9 +19,9 @@ const Footer = () => {
         <div className="contact-section">
           <h3>Contacts</h3>
           <ul>
-            <li><LocationOnIcon className='icons' /> Orchid Road, Lekki, Lagos State, Nigeria.</li>
-            <li><EmailIcon className='icons' /> danthonynwaokolo@gmail.com</li>
-            <li><PhoneIcon className='icons' /> +234 (909) 606 5436</li>
+            <li className='list'><LocationOnIcon className='icons' /> Orchid Road, Lekki, Lagos State, Nigeria.</li>
+            <li className='list'><EmailIcon className='icons' /> danthonynwaokolo@gmail.com</li>
+            <li className='list'><PhoneIcon className='icons' /> +234 (909) 606 5436</li>
           </ul>
         </div>
 
@@ -35,12 +35,15 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className="footer-section">
         <div className='news-letter'>
           <h3>Our newsletter</h3>
           <input type="email" placeholder="Your Email" className="email-input" />
           <button className="subscribe-btn">SUBSCRIBE</button>
         </div>
-
+        </div>
+        
+        <div className="footer-section">
         <div className="useful-links-section">
           <h3>Useful Links</h3>
           <ul>
@@ -49,6 +52,8 @@ const Footer = () => {
             <li><Link to="/contact" className='social_link'>Contact</Link></li>
           </ul>
         </div>
+        </div>
+        
 
       </div>
     </footer>
