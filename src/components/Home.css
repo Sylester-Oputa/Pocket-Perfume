@@ -6,7 +6,7 @@
 
 .home_container {
   background-image: url(./images/10.webp);
-  width: 112%;
+  max-width: 112%;
   height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
