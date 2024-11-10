@@ -11,12 +11,18 @@ section {
 
 /* Card Styling */
 .cards {
-  width: 250px;
+  width: 40%;
+  height: 85vh;
+  display: flex;
   padding: 20px;
   border: 1px solid #A0748C;
   border-radius: 20px;
   margin: 20px;
   transition: box-shadow 0.3s ease;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
 .cards:hover {
@@ -68,7 +74,8 @@ section {
 /* Medium Screens (up to 768px) */
 @media screen and (max-width: 768px) {
   .cards {
-    width: 200px; /* Reduces card width */
+    width: 50%;
+    height: 100vh;
   }
   .details p:nth-child(1),
   .details p:nth-child(2) {
@@ -87,8 +94,9 @@ section {
     margin-top: 10%; /* Adds more top margin */
   }
   .cards {
-    width: 100%; /* Makes each card take full width */
-    margin: 10px 0; /* Reduces margin */
+    width: 80%;
+    height: 100vh;
+    margin: 10px 0;
   }
   .details p:nth-child(1),
   .details p:nth-child(2) {

@@ -99,7 +99,9 @@ h2 {
 /* Smaller screens (up to 768px) */
 @media screen and (max-width: 768px) {
   .content-wrapper {
-    flex-direction: column; /* Stacks content vertically */
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   h2 {
     font-size: 20px; /* Adjusts title font size */

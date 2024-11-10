@@ -64,7 +64,6 @@ nav {
 /* Very small screens (up to 480px) */
 @media screen and (max-width: 480px) {
   .nav_box {
-    flex-direction: column; /* Stacks items vertically */
     align-items: flex-start;
     gap: 10px;
   }

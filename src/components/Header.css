@@ -1,6 +1,6 @@
 /* Ticker Wrapper */
 .ticker-wrap {
-  width: 100%;
+  max-width: 112%;
   overflow: hidden;
   background-color: #F9C9A1;
   color: #A46464;

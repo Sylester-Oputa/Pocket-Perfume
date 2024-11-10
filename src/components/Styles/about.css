@@ -137,8 +137,9 @@
   }
 
   .stats {
-    flex-direction: column;
     gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .features {
@@ -172,6 +173,8 @@
 
   .features {
     width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

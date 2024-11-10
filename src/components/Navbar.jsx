@@ -71,7 +71,7 @@ const Navbar = () => {
                 <Link to="/" className="sidebar_link">HOME</Link>
                 <Link to="/about" className="sidebar_link">ABOUT</Link>
                 <Link to="/shop" className="sidebar_link">SHOP</Link>
-                <Link className='link-nav' to="/services">SERVICES</Link>
+                <Link className='sidebar_link' to="/services">SERVICES</Link>
                 <Link to="/contact" className="sidebar_link">CONTACTS</Link>
               </div>
             </div>

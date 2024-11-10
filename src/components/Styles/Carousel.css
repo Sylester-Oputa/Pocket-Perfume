@@ -2,13 +2,13 @@
 .carousel-container {
   width: 80%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   background-color: #8f6e6e;
 }
 
 /* Carousel Item */
 .carousel-item {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -19,6 +19,11 @@
   width: 100px;
   height: auto;
   object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
 }
 
 /* Dot Color */
@@ -47,16 +52,13 @@
 
 /* Mobile Devices (576px and below) */
 @media screen and (max-width: 576px) {
-  .carousel-container {
-    padding: 20px 0;
-  }
-
   .logo-img {
-    width: 60px; /* Further reduce logo size */
+    width: 100px; /* Further reduce logo size */
   }
   
   .carousel-item {
     padding: 5px;
+    margin-bottom: 30px;
   }
 
   .slick-dots li button:before {

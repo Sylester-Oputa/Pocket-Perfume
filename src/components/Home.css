@@ -6,7 +6,7 @@
 
 .home_container {
   background-image: url(./images/10.webp);
-  width: 100%;
+  width: 112%;
   height: 95vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -64,9 +64,9 @@
 
 .header_container {
   background-color: white;
-  width: 35%;
+  width: 60%;
   margin-left: 200px;
-  padding: 30px;
+  padding: 40px;
   border-radius: 40px;
   position: relative;
   animation: hairanimation 1s ease-in-out;
@@ -123,14 +123,15 @@
 /* Small tablets and large mobile phones (max-width: 768px) */
 @media screen and (max-width: 768px) {
   .home_container {
-    height: 90vh;
+    height: 120vh;
     padding-top: 100px;
   }
   .header_container {
-    width: 80%;
+    width: 60%;
     margin-left: 20px;
-    padding: 15px;
+    padding: 35px;
   }
+
   .best_seller h1,
   .carousel h1 {
     font-size: 36px;
@@ -143,13 +144,13 @@
 /* Mobile phones (max-width: 480px) */
 @media screen and (max-width: 480px) {
   .home_container {
-    height: 85vh;
+    height: 111vh;
     padding-top: 80px;
   }
   .header_container {
-    width: 90%;
+    width: 70%;
     margin-left: 0;
-    padding: 10px;
+    padding: 30px;
     border-radius: 20px;
   }
   .header_container h1 {

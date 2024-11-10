@@ -3,7 +3,7 @@
   background-color: #1a1a1a;
   color: #fff;
   padding: 20px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .footer-container {
@@ -87,7 +87,7 @@
 
 /* Subscription input and button */
 .email-input {
-  width: 88%;
+  width: 100%;
   padding: 10px;
   border: 1px solid #555;
   background-color: #333;

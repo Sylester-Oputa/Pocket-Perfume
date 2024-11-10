@@ -6,6 +6,7 @@
 
 .navbar_div {
   display: flex;
+  max-width: 112%;
   align-items: center;
   justify-content: space-between;
   background-color: #A46464;
