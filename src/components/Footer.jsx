@@ -10,6 +10,8 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className='footer-logo'>
@@ -26,7 +28,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>POCKET PERFUMES.</h3>
+          <h3>POCKET PERFUMES</h3>
           <p>Popularized through customer relationships with some of the world’s most recognizable faces, the “brow revolution.”</p>
           <div className="footer-social">
             <Link to="https://api.whatsapp.com/send/?phone=2349096065436&text&type=phone_number&app_absent=0" className='social_link' target='_blank'><WhatsAppIcon /></Link>
@@ -36,25 +38,28 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-        <div className='news-letter'>
-          <h3>Our newsletter</h3>
-          <input type="email" placeholder="Your Email" className="email-input" />
-          <button className="subscribe-btn">SUBSCRIBE</button>
-        </div>
+          <div className='news-letter'>
+            <h3>Our newsletter</h3>
+            <input type="email" placeholder="Your Email" className="email-input" />
+            <button className="subscribe-btn">SUBSCRIBE</button>
+          </div>
         </div>
         
         <div className="footer-section">
-        <div className="useful-links-section">
-          <h3>Useful Links</h3>
-          <ul>
-            <li><Link to="/about" className='social_link'>About us</Link></li>
-            <li><Link to="/static" className='social_link'>Privacy</Link></li>
-            <li><Link to="/contact" className='social_link'>Contact</Link></li>
-          </ul>
+          <div className="useful-links-section">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><Link to="/about" className='social_link'>About us</Link></li>
+              <li><Link to="/static" className='social_link'>Privacy</Link></li>
+              <li><Link to="/contact" className='social_link'>Contact</Link></li>
+            </ul>
+          </div>
         </div>
-        </div>
-        
-
+      </div>
+      
+      {/* Designer and Year */}
+      <div className="footer-bottom">
+        <p>Designed by Sylvester Oputa© {currentYear}</p>
       </div>
     </footer>
   );
