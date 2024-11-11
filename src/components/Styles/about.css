@@ -184,6 +184,12 @@
     font-size: 1.6rem;
   }
 
+  .features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .section-description {
     font-size: 0.9rem;
   }

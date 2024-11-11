@@ -99,8 +99,8 @@
 /* Small Screens (up to 480px) */
 @media screen and (max-width: 480px) {
   .testimonials {
-    padding: 30px;
-    max-width: 95%; /* Maximizes width for small screens */
+    padding: 20px;
+    max-width: 100%;
   }
 
   .testimonial-slide {
@@ -112,7 +112,7 @@
   }
 
   .navigation-buttons button {
-    font-size: 25px; /* Adjusts button size for smaller screens */
+    font-size: 20px;
   }
 
   .dot {
