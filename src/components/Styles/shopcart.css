@@ -93,8 +93,8 @@ section {
     margin-top: 10%; /* Adds more top margin */
   }
   .cards {
-    width: 60%;
-    height: 60%;
+    max-width: 60%;
+    max-height: 60%;
     margin: 10px 0;
   }
   .image_box img {
