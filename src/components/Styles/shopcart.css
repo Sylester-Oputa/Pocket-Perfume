@@ -95,12 +95,12 @@ section {
   }
   .cards {
     width: 80%;
-    height: 90vh;
+    height: 75vh;
     margin: 10px 0;
   }
   .image_box img {
     width: 200px;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
   .details p:nth-child(1),
