@@ -200,7 +200,7 @@ input:focus::-webkit-input-placeholder {
     align-items: flex-start;
     background-color: #A46464;
     width: 70%;
-    height: 75vh;
+    height: 80vh;
     padding: 30px;
     position: absolute;
     z-index: 100;
@@ -213,7 +213,7 @@ input:focus::-webkit-input-placeholder {
 
   .sidebar2 {
     left: 0;
-    top: 120px;
+    top: 118px;
   }
 
   .sidebar_link {
