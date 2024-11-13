@@ -225,7 +225,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 @media screen and (max-width: 480px) {
-  .bad_search input {
+  .bad_search {
     display: none;
   }
 }
