@@ -248,7 +248,10 @@
   }
   .perfume-content p,
   .achievement-item p {
-    font-size: 0.85rem;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
     text-align: justify;
   }
   .icon-box img {
