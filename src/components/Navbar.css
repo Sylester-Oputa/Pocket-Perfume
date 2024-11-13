@@ -218,6 +218,7 @@ input:focus::-webkit-input-placeholder {
     left: 0;
     top: 118px;
     height: 100vh;
+    margin-top: -10px;
   }
 
   .sidebar_link {
