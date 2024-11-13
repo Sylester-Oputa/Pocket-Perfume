@@ -18,7 +18,7 @@ const Footer = () => {
          <Link to="/"><img src={Imgrefresher} className="foot-logo" alt="" /></Link>
       </div>
       <div className="footer-container">
-        <div className="contact-section">
+        <div className="footer-section">
           <h3>Contacts</h3>
           <ul>
             <li className='list'><LocationOnIcon className='icons' /> Orchid Road, Lekki, Lagos State, Nigeria.</li>
