@@ -7,10 +7,6 @@
   text-align: center;
 }
 
-.service{
-  margin-bottom: 0px;
-}
-
 /* Services Container */
 .services-list {
   display: flex;
@@ -58,6 +54,10 @@
   font-size: 1rem;
   color: #555;
   line-height: 1.6;
+}
+
+.carousel{
+  margin-bottom: 0px;
 }
 
 /* Responsive Styles */
