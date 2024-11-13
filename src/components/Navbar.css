@@ -217,6 +217,7 @@ input:focus::-webkit-input-placeholder {
   .sidebar2 {
     left: 0;
     top: 118px;
+    height: 100vh;
   }
 
   .sidebar_link {

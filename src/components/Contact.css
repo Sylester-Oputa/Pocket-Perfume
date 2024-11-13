@@ -127,6 +127,10 @@ iframe {
 
 /* Extra Small Screens (Very small mobile devices) */
 @media screen and (max-width: 480px) {
+  .contact {
+    height: 70vh;
+  }
+
   .contact-text h1 {
     font-size: 24px;
     padding: 10px;

@@ -53,7 +53,7 @@ const Services = () => {
         ))}
       </div>
       <div className='carousel'>
-          <Carousel />
+          <Carousel className="service" />
         </div>
       <Footer />
     </div>
