@@ -164,6 +164,38 @@ input:focus::-webkit-input-placeholder {
     display: none;
   }
 
+  .sidebar1,
+  .sidebar2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #A46464;
+    width: 70%;
+    height: 80vh;
+    padding: 30px;
+    position: absolute;
+    z-index: 100;
+  }
+
+  .sidebar1 {
+    left: -100%;
+    transition: 0.3s;
+  }
+
+  .sidebar2 {
+    left: 0;
+    top: 118px;
+  }
+
+  .sidebar_link {
+    color: #5C0C34;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 25px 0;
+    font-weight: bold;
+  }
+
   /* Display search bar inside sidebar */
   .sidebar_search {
     display: flex;
