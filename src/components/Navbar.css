@@ -168,6 +168,10 @@ input:focus::-webkit-input-placeholder {
     display: block;
   }
 
+  .sidebar_search {
+    display: none;
+  }
+
   .menu_icon {
     display: block !important;
     color: #5C0C34;
