@@ -8,7 +8,7 @@ const Shopcart = ({ item, handleClick }) => {
          handleClick(item);
       }
       return (
-            <div className='cards'>
+            <section className='cards'>
                <div className='image_box'>
                   <img className='imgbottle' src={img} alt='' />
                </div>
@@ -17,7 +17,7 @@ const Shopcart = ({ item, handleClick }) => {
                   <p>Price: ₦{price}</p>
                   <button onClick={newhandleclick}>Add to Cart</button>
                </div>
-            </div>
+            </section>
       );
    }
 };
