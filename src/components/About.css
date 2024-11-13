@@ -207,6 +207,17 @@
   }
   .perfume-content {
     padding-right: 0;
+    width: 80%;
+    display: flow;
+    justify-self: center;
+  }
+  .perfume-icons{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr;
   }
   .perfume-image img {
     width: 300px;
