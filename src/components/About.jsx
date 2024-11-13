@@ -28,6 +28,7 @@ const About = () => {
           vibrant, oceanic undertones—each blend created to leave a lasting impression and embrace
           the beauty of nature.
         </p>
+        </div>
         <div className="perfume-icons">
           <div className="icon-box">
             <img src={freshIcon} alt="Fresh Scents" />
@@ -46,7 +47,7 @@ const About = () => {
             <h3>Citrus Fresh</h3>
           </div>
         </div>
-      </div>
+
       <div className="perfume-image">
         <img src={about1} alt="Perfume Bottles" />
       </div>
