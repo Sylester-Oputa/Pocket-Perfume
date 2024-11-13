@@ -56,9 +56,9 @@ const Navbar = () => {
               onChange={handleSearch}
             />
             <SearchIcon className="Search_icon_input" />
-            <Link to="/shop" className="link"><LocalMallIcon className="bag_icon" /></Link>
           </div>
 
+          <Link to="/shop" className="link"><LocalMallIcon className="bag_icon" /></Link>
           <Link to="/login" className="link"><LoginIcon className="login_icon" /></Link>
           <Link to="/signup" className="link"><PersonAddAltIcon className="person_add" /></Link>
           <div className="menu_icon_wrapper">
