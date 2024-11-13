@@ -223,3 +223,9 @@ input:focus::-webkit-input-placeholder {
     font-weight: bold;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .bad_search input {
+    display: none;
+  }
+}
