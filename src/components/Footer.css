@@ -222,3 +222,35 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 375px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 50px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .email-input,
+  .subscribe-btn {
+    font-size: 14px;
+  }
+
+  .footer-social a {
+    font-size: 16px;
+  }
+
+  .footer-section {
+    flex-basis: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
+
+/* Small phones (320px) */
+@media screen and (max-width: 320px) {
+  /* Styles for devices up to 320px wide */
+}
