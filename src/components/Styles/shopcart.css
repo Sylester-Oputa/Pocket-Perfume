@@ -109,3 +109,31 @@ section {
     font-size: 15px; /* Reduces button font size */
   }
 }
+@media screen and (max-width: 375px) {
+  section {
+    width: 90%; /* Expands section width */
+    margin-top: 10%; /* Adds more top margin */
+  }
+  .cards {
+    height: 60%;
+    margin: 10px 0;
+    width: 80%;
+}
+  .image_box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+  .details p:nth-child(1),
+  .details p:nth-child(2) {
+    font-size: 18px; /* Further reduces font size */
+  }
+  .details button {
+    font-size: 15px; /* Reduces button font size */
+  }
+}
+
+/* Small phones (320px) */
+@media screen and (max-width: 320px) {
+  /* Styles for devices up to 320px wide */
+}
