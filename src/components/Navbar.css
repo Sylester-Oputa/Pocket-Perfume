@@ -113,12 +113,6 @@
   cursor: pointer;
 }
 
-.bad_search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .link {
   text-decoration: none;
   color: #5C0C34;
@@ -157,30 +151,42 @@ input:focus::-webkit-input-placeholder {
   font-size: 12px;
 }
 
-/* Navbar Media Query for Devices under 990px */
-@media screen and (max-width: 990px) {
-  .navbar_main {
-    padding: 0 20px;
-    margin: 0;
-  }
+/* Default styling for the search bar in the navbar */
+.bad_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .menu_icon_wrapper {
-    display: block;
-  }
-
-  .menu_icon {
-    display: block !important;
-    color: #5C0C34;
-    font-size: 25px !important;
-  }
-
-  .Nav_links {
+/* Hide the default search bar on screens 480px and below */
+@media screen and (max-width: 480px) {
+  .bad_search {
     display: none;
   }
 
-  .bag_icon {
+  /* Display search bar inside sidebar */
+  .sidebar_search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .sidebar_search input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #F9C9A1;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
     color: #5C0C34;
-    margin-left: 10px;
+  }
+
+  .Search_icon_sidebar {
+    font-size: 20px;
+    color: #5C0C34;
+    margin-left: 8px;
+    cursor: pointer;
   }
 }
 
