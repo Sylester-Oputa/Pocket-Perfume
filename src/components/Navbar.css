@@ -253,7 +253,7 @@ input:focus::-webkit-input-placeholder {
   .Search_icon_sidebar {
     font-size: 20px;
     color: #5C0C34;
-    margin-left: 8px;
+    margin-left: -30px;
     cursor: pointer;
   }
 }
