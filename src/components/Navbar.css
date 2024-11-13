@@ -235,4 +235,21 @@ input:focus::-webkit-input-placeholder {
     width: 100%;
     padding: 10px 0;
   }
+
+  .sidebar_search input {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #F9C9A1;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    color: #5C0C34;
+  }
+
+  .Search_icon_sidebar {
+    font-size: 20px;
+    color: #5C0C34;
+    margin-left: 8px;
+    cursor: pointer;
+  }
 }
