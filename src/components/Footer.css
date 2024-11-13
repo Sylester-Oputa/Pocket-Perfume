@@ -49,7 +49,7 @@
   text-align: center;
 }
 
-.contact-section ul,
+.footer-section ul,
 .useful-links-section ul {
   list-style: none;
   padding: 0;
@@ -76,7 +76,8 @@
   text-align: left;
 }
 
-.social_link {
+.social_link,
+.footer-section {
   text-decoration: none;
   color: white;
 }
