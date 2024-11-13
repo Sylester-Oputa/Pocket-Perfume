@@ -13,7 +13,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="footer">
+    <footer role="contentinfo" className="footer">
       <div className='footer-logo'>
          <Link to="/"><img src={Imgrefresher} className="foot-logo" alt="" /></Link>
       </div>

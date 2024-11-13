@@ -11,7 +11,7 @@ const NewsTicker = () => {
   ];
 
   return (
-    <div className="ticker-wrap">
+    <div role="banner" className="ticker-wrap">
       <div className="ticker">
         {newsItems.map((item, index) => (
           <div className="ticker-item" key={index}>

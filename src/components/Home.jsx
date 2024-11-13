@@ -17,7 +17,7 @@ const Home = () => {
         </p>
         <Link to="/shop"><button className='perfumebtn'>Shop Perfume</button></Link>
       </header>
-      <main className="content">
+      <main role="main" className="content">
         <section className="best_seller">
         <h1>Best Sellers Products</h1>
           <BestSeller />

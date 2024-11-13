@@ -40,7 +40,7 @@ const Navbar = () => {
                <Link to="/"><img src={Imgrefresher} className="heading_logo" alt="" /></Link>
             </div>
 
-            <div className="Nav_links">
+            <div role="navigation" className="Nav_links">
                 <Link to="/" className="link">HOME</Link>
                 <Link to="/about" className="link">ABOUT</Link>
                 <Link to="/shop" className="link">SHOP</Link>
