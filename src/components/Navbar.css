@@ -113,6 +113,12 @@
   cursor: pointer;
 }
 
+.bad_search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .link {
   text-decoration: none;
   color: #5C0C34;
@@ -151,74 +157,30 @@ input:focus::-webkit-input-placeholder {
   font-size: 12px;
 }
 
-/* Default styling for the search bar in the navbar */
-.bad_search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/* Navbar Media Query for Devices under 990px */
+@media screen and (max-width: 990px) {
+  .navbar_main {
+    padding: 0 20px;
+    margin: 0;
+  }
 
-/* Hide the default search bar on screens 480px and below */
-@media screen and (max-width: 480px) {
-  .bad_search {
+  .menu_icon_wrapper {
+    display: block;
+  }
+
+  .menu_icon {
+    display: block !important;
+    color: #5C0C34;
+    font-size: 25px !important;
+  }
+
+  .Nav_links {
     display: none;
   }
 
-  .sidebar1,
-  .sidebar2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #A46464;
-    width: 70%;
-    height: 80vh;
-    padding: 30px;
-    position: absolute;
-    z-index: 100;
-  }
-
-  .sidebar1 {
-    left: -100%;
-    transition: 0.3s;
-  }
-
-  .sidebar2 {
-    left: 0;
-    top: 118px;
-  }
-
-  .sidebar_link {
+  .bag_icon {
     color: #5C0C34;
-    font-size: 20px;
-    text-decoration: none;
-    margin: 25px 0;
-    font-weight: bold;
-  }
-
-  /* Display search bar inside sidebar */
-  .sidebar_search {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .sidebar_search input {
-    width: 80%;
-    padding: 8px;
-    border: 1px solid #F9C9A1;
-    border-radius: 20px;
-    background-color: transparent;
-    outline: none;
-    color: #5C0C34;
-  }
-
-  .Search_icon_sidebar {
-    font-size: 20px;
-    color: #5C0C34;
-    margin-left: 8px;
-    cursor: pointer;
+    margin-left: 10px;
   }
 }
 
