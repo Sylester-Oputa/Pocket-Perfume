@@ -199,7 +199,7 @@
   .footer-container {
     grid-template-columns: 1fr;
     gap: 25px;
-    padding: 50px;
+    padding: 40px;
   }
 
   .footer-section h3 {
