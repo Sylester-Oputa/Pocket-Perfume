@@ -11,6 +11,9 @@ section {
 
 /* Card Styling */
 .cards {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   width: 35%;
   height: 70%;
   display: flex;
@@ -19,9 +22,6 @@ section {
   border-radius: 20px;
   margin: 20px;
   transition: box-shadow 0.3s ease;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
 }
 
 .cards:hover {
