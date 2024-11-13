@@ -132,8 +132,3 @@ section {
     font-size: 15px; /* Reduces button font size */
   }
 }
-
-/* Small phones (320px) */
-@media screen and (max-width: 320px) {
-  /* Styles for devices up to 320px wide */
-}
