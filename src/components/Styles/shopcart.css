@@ -31,8 +31,7 @@ section {
 /* Image Box */
 .image_box img {
   width: 250px;
-  height: 280px;
-  object-fit: cover; /* Ensures the image fills its container without distortion */
+  height: 250px;
 }
 
 /* Card Details */
